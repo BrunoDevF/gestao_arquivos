@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    background-color: var(--blue);
+    
+}
+
+:root{
+    --white:#fff;
+    --background: #f2f3f5;
+    --gray-line: #dcdde0;
+    --text: #6666;
+    --text--highlight: #b3b9ff;
+    --title: #2e384d;
+    --red: #e83f5b;
+    --green: #4cd62b;
+    --blue: #5965e0;
+    --blue-dark: #4952b8;
+    --blue-twitter: #2aa9e0;
+}
+
+.title {
+    
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.center-all {
+    height: 666px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-all label {
+    color: var(--blue-dark);
+}
+.center-all > form {
+    background-color: var(--white);
+    border-radius: 5px;
+    animation-name: fade;
+    animation-duration: 1s;
+
+    color: var(--white);
+    font-size: 1.12rem;
+    padding: 30px;
+    width: 447px;
+    height: 220px;
+    display: flex;
+    /* align-items: flex-start; */
+    justify-items: center;
+    flex-direction: column;
+    
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+        transform: scale(0.9);
+    }100%{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}
+
+
+.center-all form label {
+    font-size: 1.25rem;
+}
+.center-all > form > input[type=text],
+.center-all > form > input[type=password]
+{
+    outline: none;
+    padding: 0.31rem;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 9px;
+}
+.center-all form input[type=submit] {
+    width: 115px;
+    padding: 0.25rem 1rem;
+    font-size: 1.06rem;
+    background-color: var(--green);
+    color: var(--white);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}

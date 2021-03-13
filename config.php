@@ -17,6 +17,8 @@
     define('DATABASE','gestao');
 
 
+    define('MAIN','http://localhost/gestao_arquivos/');
+
 ?>
 
 
